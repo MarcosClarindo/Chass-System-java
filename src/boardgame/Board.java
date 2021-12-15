@@ -29,7 +29,13 @@ public class Board {
 		this.columns = columns;
 	}
 	
-	
+	public Piece piece(int row, int column) {
+		return pieces [row] [column];
+	}
+	// Sobre carga do método
+	public Piece piece (Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 	
 	
 }
